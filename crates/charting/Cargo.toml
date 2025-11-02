@@ -1,0 +1,16 @@
+[package]
+name = "charting"
+version.workspace = true
+edition.workspace = true
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+wasm-bindgen = { workspace = true }
+web-sys = { workspace = true }
+chrono = { workspace = true }
+serde = { workspace = true }
+
+[features]
+default = []
